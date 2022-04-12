@@ -11,7 +11,7 @@ import { FavPhotosComponent } from './fav-photos/fav-photos.component';
     AppComponent,
     MovieListComponent,
     ChoresListComponent,
-    FavPhotosComponent
+    FavPhotosComponent,
   ],
   imports: [
     BrowserModule
