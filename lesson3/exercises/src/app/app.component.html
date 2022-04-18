@@ -34,8 +34,8 @@
       </div>
    </div>
    <div class="container-control-buttons">
-      <button (click)="handleTakeOff(rocketImage)">Take Off</button>
-      <button (click)="handleLand(rocketImage)">Land</button>
-      <button (click)="handleAbort(rocketImage)">Abort Mission</button>
+      <button (click)="handleTakeOff(rocketImage)" [disabled]="takeOffEnabled">Take Off</button>
+      <button (click)="handleLand(rocketImage)" [disabled]="!takeOffEnabled">Land</button>
+      <button (click)="handleAbort(rocketImage)" [disabled]="!takeOffEnabled">Abort Mission</button>
    </div>
 </div>
